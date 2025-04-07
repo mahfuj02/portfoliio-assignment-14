@@ -2,16 +2,15 @@ import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 type HeaderProps = {
-  scrollToSection: (ref: React.RefObject<HTMLDivElement>) => void;
-  refs: {
-    aboutRef: React.RefObject<HTMLDivElement>;
-    projectsRef: React.RefObject<HTMLDivElement>;
-    skillsRef: React.RefObject<HTMLDivElement>;
-    resourcesRef: React.RefObject<HTMLDivElement>;
-    devSetupRef: React.RefObject<HTMLDivElement>;
-    contactRef: React.RefObject<HTMLDivElement>;
+    scrollToSection: (ref: React.RefObject<HTMLDivElement | null>) => void;     refs: {
+      aboutRef: React.RefObject<HTMLDivElement | null>;
+      projectsRef: React.RefObject<HTMLDivElement | null>;
+      skillsRef: React.RefObject<HTMLDivElement | null>;
+      resourcesRef: React.RefObject<HTMLDivElement | null>;
+      devSetupRef: React.RefObject<HTMLDivElement | null>;
+      contactRef: React.RefObject<HTMLDivElement | null>;
+    };
   };
-};
 
 const HeaderContainer = styled.header<{ isScrolled: boolean }>`
   position: fixed;
@@ -37,11 +36,11 @@ const Logo = styled.div`
   gap: 10px;
 `;
 
-const LogoImage = styled.img`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-`;
+// const LogoImage = styled.img`
+//   width: 40px;
+//   height: 40px;
+//   border-radius: 50%;
+// `;
 
 const LogoText = styled.h1`
   font-size: 1.25rem;
