@@ -13,14 +13,14 @@ These instructions will help you run the application locally using Docker.
 ### Running the Application
 
 1. Clone the repository
-git clone [repository-url]
+git clone [(https://github.com/mahfuj02/portfoliio-assignment-14)]
 cd [repository-folder]
 
 2. Build the Docker image
-docker build -t lastName_firstName_coding_assignment14 .
+docker build -t ahmed_mahfuj_coding_assignment14 .
 
 3. Run the Docker container
-docker run -d -p 5575:5575 --name lastName_firstName_coding_assignment14 lastName_firstName_coding_assignment14
+docker run -d -p 5575:5575 --name ahmed_mahfuj_coding_assignment14 ahmed_mahfuj_coding_assignment14
 
 4. Access the website
 Open your browser and navigate to [http://localhost:5575](http://localhost:5575) or [http://127.0.0.1:5575](http://127.0.0.1:5575)
@@ -28,10 +28,10 @@ Open your browser and navigate to [http://localhost:5575](http://localhost:5575)
 ### Stopping the Container
 
 To stop the container, run:
-docker stop lastName_firstName_coding_assignment14
+docker stop ahmed_mahfuj_coding_assignment14
 
 ### Removing the Container
 
 To remove the container, run:
 
-docker rm lastName_firstName_coding_assignment14
+docker rm ahmed_mahfuj_coding_assignment14

@@ -154,6 +154,13 @@ const Header = ({ scrollToSection, refs }: HeaderProps) => {
               </NavItem>
               <NavItem>
                 <NavButton 
+                  onClick={() => scrollToSection(refs.projectsRef)}
+                >
+                  PROJECTS
+                </NavButton>
+              </NavItem>
+              <NavItem>
+                <NavButton 
                   onClick={() => scrollToSection(refs.skillsRef)}
                 >
                   SKILLS

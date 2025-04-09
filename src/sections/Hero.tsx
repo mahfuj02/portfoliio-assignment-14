@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { PrimaryButton } from '../styles/SharedComponents';
+// import { PrimaryButton } from '../styles/SharedComponents';
+import { Button } from '../library/Button';
 
 type HeroProps = {
   scrollToProjects: () => void;
@@ -72,10 +73,9 @@ const Hero = ({ scrollToProjects }: HeroProps) => {
             A Fullstack Web Developer building and managing Websites and Web
             Applications that leads to the success of the overall product
           </HeroSubtitle>
-          
-          <PrimaryButton onClick={scrollToProjects}>
+          <Button   backgroundColor="#6a3bce" size="large" onClick={scrollToProjects}> 
             SEE MY WORK
-          </PrimaryButton>
+          </Button>
           
           <SocialLinks>
             <SocialLink href="https://github.com/mahfuj02" target="_blank" rel="noopener noreferrer">
